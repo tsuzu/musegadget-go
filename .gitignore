@@ -1,0 +1,28 @@
+# Binaries
+/musegadget
+/cmd/musegadget/musegadget
+*.exe
+*.test
+*.out
+
+# Go build cache / module artifacts (module files go.mod/go.sum are tracked)
+/vendor/
+
+# Muse Gadgets runtime state — contains identity, pairing material and tokens.
+# Never commit state directories or pairing/token files.
+state/
+.state/
+*.pairing.json
+pairing.json
+identity.json
+config.json
+commands.d/
+*.sock
+
+# Editor / OS
+.idea/
+.vscode/
+.DS_Store
+Thumbs.db
+*~
+*.swp
